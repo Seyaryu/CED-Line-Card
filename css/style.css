@@ -1,0 +1,83 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#logo-container img {
+  max-height: 50px;
+  width: auto;
+  padding-top: 10px;
+}
+
+/* pulled from https://palettes.shecodes.io/palettes/594 for color schema */
+.first-color { 
+	background: #00204a; 
+}
+	
+.second-color { 
+	background: #005792; 
+}
+
+.third-color { 
+	background: #00bbf0; 
+}
+
+.fourth-color { 
+	background: #fdb44b; 
+}
+
+.hidden {
+	display: none;
+}
+
+#mfr-list {
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.mfr {
+    width: 200px;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.mfr img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: .6;
+}
+
+.mfr-name {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mfr:hover .mfr-name {
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.mfr:hover img {
+    transition: opacity 2s;
+    opacity: 1;
+    filter: grayscale(0%);
+}

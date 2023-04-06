@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="third-color lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="assets/CED-logo.png"
+          alt="CED"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="contact" href="tel:8582681020">&#128222; (858) 268-1020</a></li>
+        <li><a href="mailto: customerservice@cedsandiego.com">&#9993; Email Customer Service</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="contact" href="tel:8582681020">&#128222; (858) 268-1020</a></li>
+        <li><a href="mailto: customerservice@cedsandiego.com">&#9993; Email Customer Service</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Starter Template</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button"
+          class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <!-- <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="col s12 m4" id="keyword">
+        <div class="select-header">
+          <h2>Product Type</h2>
+        </div>
+        <ul class="sub-select" id="keyword-select">
+          <li><input type="checkbox" class="toggle" id="fittings_checked">
+            <p>Fittings</p>
+          </li>
+          <li><input class="toggle" type="checkbox" id="hardware_checked">
+            <p>Hardware</p>
+          </li>
+          <li><input class="toggle" type="checkbox" id="gear_checked">
+            <p>Gear</p>
+          </li>
+          <li><input class="toggle" type="checkbox" id="lighting_checked">
+            <p>Lighting</p>
+          </li>
+          <li><input class="toggle" type="checkbox" id="tools_checked">
+            <p>Tools</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="select-section col s12 m4" id="origin">
+        <div class="select-header">
+          <h2>Country of Origin</h2>
+        </div>
+        <ul class="sub-select" id="origin-select">
+          <li><input class="toggle" type="checkbox" id="american_checked">
+            <p>American</p>
+          </li>
+          <li><input class="toggle" type="checkbox" id="nafta_checked">
+            <p>Nafta</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="select-section col s12 m4" id="position">
+        <div class="select-header">
+          <h2>Stock / Non-Stock</h2>
+        </div>
+        <ul class="sub-select" id="origin-select">
+          <li><input class="toggle" type="checkbox" id="stock_checked">
+            <p>Stock</p>
+          </li>
+          <li><input class="toggle" type="checkbox" id="non-stock_checked">
+            <p>Non-Stock</p>
+          </li>
+        </ul>
+      </div>
+
+      <h2 id="mfr-topbar">Manufacturers</h2>
+      <div id="mfr-list">
+
+        <div class="mfr" id="bridgeport">
+          <a href="https://www.bptfittings.com/" target="_blank"><img src="assets/mfr/bridgeport-logo.png"
+              alt="Bridgeport Fittings">
+            <p class="mfr-name">Bridgeport</p>
+          </a>
+        </div>
+        <div class="mfr" id="lithonia">
+          <a href="https://lithonia.acuitybrands.com/" target="_blank"><img src="assets/mfr/lithonia-logo.png"
+              alt="Lithonia Lighting">
+            <p class="mfr-name">Lithonia</p>
+          </a>
+        </div>
+        <div class="mfr" id="bline">
+          <a href="https://www.eaton.com/us/en-us/products/support-systems/b-line-library/market-solutions.html"
+            target="_blank"><img src="assets/mfr/bline-logo.png" alt="B-Line">
+            <p class="mfr-name">B-Line</p>
+          </a>
+        </div>
+        <div class="mfr" id="southwire">
+          <a href="https://www.southwire.com/" target="_blank"><img src="assets/mfr/southwire-logo.png" alt="Southwire">
+            <p class="mfr-name">Southwire</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer fourth-color">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+            full time job. Any amount would help support and continue development on this project and is greatly
+            appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
