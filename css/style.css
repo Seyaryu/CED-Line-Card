@@ -36,8 +36,8 @@
 	background: #fdb44b; 
 }
 
-.hidden {
-	display: none;
+.show {
+	display: inline;
 }
 
 #mfr-list {

@@ -6,8 +6,28 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-// select all checkboxes with the "toggle" class
-var checkboxes = document.querySelectorAll('.toggle');
+
+var allUnchecked = true;
+var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+checkboxes.addEventListener('change', () => {
+  for(var i=0; i<checkboxes.length; i++) {
+    if(checkboxes[i].checked) {
+      allUnchecked = false;
+      break;
+    }
+  }
+
+  if(allUnchecked) {
+    // all checkboxes are unchecked
+    document.getElementsByClassName('show').style.display = 'inline';
+  } else {
+    // at least one checkbox is checked
+    document.getElementsByClassName('show').style.display = 'none';
+  
+  }
+  
+})
 
 // loop through each checkbox and add a click event listener
 checkboxes.forEach(function(checkbox) {
@@ -18,3 +38,4 @@ checkboxes.forEach(function(checkbox) {
     target.classList.toggle('show');
   });
 });
+
